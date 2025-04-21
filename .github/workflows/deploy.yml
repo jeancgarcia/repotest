@@ -30,7 +30,9 @@ jobs:
         run: npx tsc --noEmit
         
       - name: Build
-        run: npm run build
+        run: npx tsc --noEmit && npm run build
+        env:
+          NODE_ENV: production
         
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
