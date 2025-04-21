@@ -34,7 +34,7 @@ const App = () => {
       <TooltipProvider>
         <Toaster />
         <Sonner />
-        <HashRouter basename="/repotest">
+        <HashRouter>
           <ScrollToTop />
           <Routes>
             <Route path="/" element={<Index />} />
