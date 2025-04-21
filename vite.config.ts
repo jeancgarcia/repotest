@@ -5,7 +5,7 @@ import { componentTagger } from "lovable-tagger";
 
 // https://vitejs.dev/config/
 export default defineConfig(({ mode }) => ({
-  base: "",
+  base: "/repotest/",
   plugins: [
     react(),
     mode === 'development' &&
@@ -27,6 +27,7 @@ export default defineConfig(({ mode }) => ({
     assetsInlineLimit: 0,
     minify: true,
     outDir: 'dist',
+    emptyOutDir: true,
     cssCodeSplit: true,
     sourcemap: false,
     modulePreload: {
